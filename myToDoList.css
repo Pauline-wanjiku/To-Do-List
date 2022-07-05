@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(120deg, #f6d365, #fda085);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+header{
+  font-size: 1rem;
+}
+header,form{
+min-height: 15vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+form input, form button{
+padding: 0.5rem;
+font-size: 1rem;
+border: none;
+background:white;
+
+}
+.todos-input{
+  outline: none;
+}
+.submitBtn:hover{
+  background: #eb830d;
+  color:white;
+
+}
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toDo-list{
+  min-width: 30%;
+  list-style: none;
+}
+.todoListContainer{
+  background-color: antiquewhite;
+  color: black;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.deleteBtn{
+  background-color: #f5b9a8;
+padding: 0.5rem;
+border: none;
+cursor: pointer;
+outline: none;
+
+}
+.deleteBtn:hover{
+  color: red;
+}
+.completeBtn{
+  background-color: #ff6f47;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+
+}
+.completeBtn:hover{
+  background-color: rgb(110, 180, 6);
+}
+.todoItem{
+  padding: 0rem 0.5rem;
+}
+.doneToDo{
+  text-decoration: line-through;
+  font-size: medium;
+  color: rgb(247, 47, 12);
+  opacity: 0.5;
+}
+.doneToDo .completeBtn{
+  background-color: rgb(110, 180, 6);
+
+}
+.deletedListBtn{
+  display: none;
+}
+.fa-trash,.fa-check{
+  pointer-events: none;
+
+}
+.lightDarkMode{
+  margin-left:  20px;
+  display: flex;
+  justify-content: right;
+  min-height: 1vh;
+
+  
+
+}
